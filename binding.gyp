@@ -61,6 +61,20 @@
                 }
               ],
               [
+                'target_arch=="mipsel"', {
+                  'variables': {
+                    'openssl_config_path': '<(nodedir)/deps/openssl/config/arm'
+                  }
+                }
+              ],
+              [
+                'target_arch=="mips"', {
+                  'variables': {
+                    'openssl_config_path': '<(nodedir)/deps/openssl/config/arm'
+                  }
+                }
+              ],
+              [
                 'target_arch=="arm64"', {
                   'variables': {
                     'openssl_config_path': '<(nodedir)/deps/openssl/config/aarch64'
